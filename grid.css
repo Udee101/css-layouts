@@ -1,0 +1,77 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  background: #1a1a2f;
+  font-family: 'Montserrat', sans-serif;
+}
+header{
+  width: 100%;
+  height: 70px;
+  padding: 15px;
+  background: rgb(221, 220, 220);
+}
+header nav{
+  display: flex;
+  justify-content: space-around;
+}
+header a{
+  margin-left: 20px;
+  padding: 5px 10px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-size: 2em;
+  font-weight: bold;
+  color: black;
+  transition: .3s;
+}
+header .active{
+  background: #1a1a2f;
+  color: white;
+}
+header a:hover{
+  background: #1a1a2f;
+  color: white;
+}
+main{
+  width: 50%;
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: grid;
+  grid-template-areas: 
+  'a a a b b'
+  'a a a b b'
+  'c c d d d'
+  'c c e e e'
+  ;
+  gap: 15px;
+}
+main div{
+  padding: 4em;
+
+}
+.block-a{
+  background: orangered;
+  grid-area: a;
+}
+.block-b{
+  background: #f6b229;
+  grid-area: b;
+}
+.block-c{
+  background: #2f9e38;
+  grid-area: c;
+}
+.block-d{
+  background: #3ec3d8;
+  grid-area: d;
+}
+.block-e{
+  background: #3ec3d8;
+  grid-area: e;
+}
